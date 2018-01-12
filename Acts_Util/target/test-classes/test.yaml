@@ -1,0 +1,73 @@
+OperatorLogonQueryFacade_queryByIpRoleId_caseID_001: !!com.alipay.test.acts.model.PrepareData
+  args:
+    description: null
+    inputArgs:
+    - description: ipRoleId
+      flags: {}
+      nodeDesc: null
+      nodeGroup: null
+      objBaseDesc: ipRoleId
+      objBaseName: String
+      objClass: java.lang.String
+      object: '2088201712121234'
+    - description: bizContext
+      flags: {}
+      nodeDesc: null
+      nodeGroup: null
+      objBaseDesc: bizContext
+      objBaseName: BizContext
+      objClass: com.alipay.fc.operator.common.service.context.BizContext
+      object: !!com.alipay.fc.operator.common.service.context.BizContext {loginCompatible: false,
+        operatorId: '', tntInstId: ''}
+  depDataSet:
+    description: null
+    virtualTables:
+    - dataObjClazz: null
+      flags: {pk_id: N, ip_role_id: C, tnt_inst_id: Y, ip_id: Y, type: Y, status: Y,
+        name: Y, description: Y, creator: C, modifier: Y, gmt_create: Y, gmt_modified: Y,
+        ext_info: Y, external_id: Y, is_admin: Y}
+      nodeDesc: null
+      nodeGroup: null
+      tableBaseDesc: op_operator
+      tableData:
+      - {pk_id: '', ip_role_id: '2088201712121234', tnt_inst_id: ANTGW2CN, ip_id: '2188414164649999',
+        type: '2', status: T, name: 林波测试操作员, description: 这是个测试操作员, creator: 林波, modifier: 林波,
+        gmt_create: '2016-10-10 10:10:10.0', gmt_modified: '2016-10-10 10:10:10.0',
+        ext_info: '', external_id: '', is_admin: F}
+      tableName: op_operator
+  description: 正常用例#查询成功#正常操作员查询登录号
+  expectDataSet:
+    description: null
+    virtualTables: []
+  expectEventSet:
+    description: null
+    virtualEventObjects: []
+  expectException: {description: null, exceptionClass: null, expectException: null,
+    expectExceptionObject: null}
+  expectResult:
+    description: null
+    result:
+      description: Result
+      flags: {}
+      nodeDesc: null
+      nodeGroup: null
+      objBaseDesc: Result
+      objBaseName: Result
+      objClass: com.alipay.common.error.Result
+      object: !!com.alipay.common.error.Result
+        errorContext: null
+        resultObj: !!com.alipay.fc.operator.common.service.result.OperatorLogonMultiQueryResult
+          operatorLogonInfos:
+          - {logonId: '15012341234', logonType: '1', operatorId: '2088201712121234',
+            status: T}
+        success: true
+    resultClazz: com.alipay.common.error.Result
+  virtualComponentSet:
+    components: []
+    description: null
+  virtualMockSet:
+    description: null
+    virtualMockList: []
+  virtualParams:
+    description: null
+    params: {}

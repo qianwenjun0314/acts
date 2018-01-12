@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Acts.iml" filepath="$PROJECT_DIR$/Acts.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Acts_Core/Acts_Core.iml" filepath="$PROJECT_DIR$/Acts_Core/Acts_Core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Acts_Dto/Acts_Dto.iml" filepath="$PROJECT_DIR$/Acts_Dto/Acts_Dto.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Acts_Test/Acts_Test.iml" filepath="$PROJECT_DIR$/Acts_Test/Acts_Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Acts_Util/Acts_Util.iml" filepath="$PROJECT_DIR$/Acts_Util/Acts_Util.iml" />
+    </modules>
+  </component>
+</project>
