@@ -6,7 +6,7 @@ package base; /**
  * Description:
  */
 
-import db.DBUtil;
+import db.DB;
 import file.PropertiesFile;
 import file.TextFile;
 import org.apache.log4j.Logger;
@@ -46,7 +46,7 @@ public class ActsTestBase {
     protected static boolean isHttps = false;
 
     //数据库操作组件
-    public DBUtil dbUtil;
+    public DB db;
 
     private static String currentTestClassName = null;
 
@@ -67,7 +67,7 @@ public class ActsTestBase {
         logger.info("testCase开始执行.\r\n");
         logger.info("开始加载数据库操作组件.\r\n");
         ApplicationContext context = new ClassPathXmlApplicationContext("spring-common-test.xml");
-        dbUtil = (DBUtil)context.getBean("db");
+        db = (DB)context.getBean("db");
 
     }
 
